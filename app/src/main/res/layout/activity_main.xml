@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/english"
+                style="@style/course"
+                android:text="English"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/spanish"
+                style="@style/course"
+                android:text="Spanish"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/globalStudies"
+                style="@style/course"
+                android:text="Global Studies"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/algebra"
+                style="@style/course"
+                android:text="Algebra"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/sports"
+                style="@style/course"
+                android:text="Sports"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/earthScience"
+                style="@style/course"
+                android:text="Earth Science"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/compSci"
+                style="@style/course"
+                android:text="Computer Science"/>
+
+            <View
+                style="@style/separator"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Average"
+                        android:textAlignment="center"
+                        android:textColor="@color/background"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/average"
+                        android:layout_width="100dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="88%"
+                        android:textAlignment="center"
+                        android:textColor="@color/background"
+                        android:textSize="26sp" />
+
+                    <TextView
+                        android:id="@+id/grade_Stat"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/colorAccent"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="Passing"
+                        android:textAlignment="center"
+                        android:textColor="@color/background"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/course_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="English"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="26dp" />
+
+                    <TextView
+                        android:id="@+id/department"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="ENL"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/professor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Jack E"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="Credits: "
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp" />
+
+                            <TextView
+                                android:id="@+id/credits"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="1"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:background="@color/colorAccent"
+            android:textColor="@color/background"
+            android:textSize="26dp"
+            android:text="Assignments" />
+
+
+    </LinearLayout>
+
+</ScrollView>
