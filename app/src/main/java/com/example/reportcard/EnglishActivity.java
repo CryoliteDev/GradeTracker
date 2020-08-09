@@ -36,5 +36,4 @@ public class EnglishActivity extends AppCompatActivity {
         assignmentListView.setAdapter(adapter);
     }
 
-
 }

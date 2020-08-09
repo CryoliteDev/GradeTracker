@@ -18,16 +18,16 @@ public class AssignmentAdapter extends ArrayAdapter<Assignment> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_assignment,parent,false);
+                    R.layout.assignment_list,parent,false);
         }
 
         Assignment currentAssignment = getItem(position);
 
-        //assignment name text view in list_assignment
+        //assignment name text view in assignment_list
         TextView assignmentTextView = (TextView) listItemView.findViewById(R.id.assignment_text_view);
         assignmentTextView.setText(currentAssignment.getAssignmentName());
 
-        //due_date_text_view in list_assignment
+        //due_date_text_view in assignment_list
         TextView dueDateTextView = (TextView) listItemView.findViewById(R.id.due_date_text_view);
         dueDateTextView.setText(currentAssignment.getAssignmentDueDate());
 

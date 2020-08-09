@@ -71,6 +71,22 @@
             <View
                 style="@style/separator"/>
 
+            <TextView
+                android:id="@+id/test"
+                style="@style/course"
+                android:text="Computer Science"/>
+
+            <View
+                style="@style/separator"/>
+
+            <TextView
+                android:id="@+id/test2"
+                style="@style/course"
+                android:text="Computer Science"/>
+
+            <View
+                style="@style/separator"/>
+
 
         </LinearLayout>
 
