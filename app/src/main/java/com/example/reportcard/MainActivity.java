@@ -2,12 +2,11 @@ package com.example.reportcard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -18,27 +17,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.course);
 
-        ArrayList<Course> courses = new ArrayList<Course>();
-        courses.add(new Course("English","english"));
-        courses.add(new Course("Spanish","spanish"));
-        courses.add(new Course("Global Studies","history"));
+        final ArrayList<Course> courses = new ArrayList<Course>();
+        courses.add(new Course("English",001));
+        courses.add(new Course("Spanish",002));
 
-        CourseAdapter adapter = new CourseAdapter(this,courses);
+        final CourseAdapter adapter = new CourseAdapter(this,courses);
 
-        ListView courseListView = (ListView) findViewById(R.id.course_list);
+        final ListView courseListView = (ListView) findViewById(R.id.course_list);
 
         courseListView.setAdapter(adapter);
 
         /**
-         * Intent for English Course
+         * Intent for Courses
          */
-        TextView english = (TextView) findViewById(R.id.english);
-
-        english.setOnClickListener(new View.OnClickListener() {
+        courseListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent engIntent = new Intent(MainActivity.this, EnglishActivity.class);
-                startActivity(engIntent);
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+
+                int unitID = adapter.getItem(position).getUnitID();
+
+                if (unitID == 001) {
+                    Intent engIntent = new Intent(MainActivity.this, EnglishActivity.class);
+                    startActivity(engIntent);
+                } else if (unitID == 002) {
+                    Intent spanIntent = new Intent(MainActivity.this, SpanishActivity.class);
+                    startActivity(spanIntent);
+                }
             }
         });
     }

@@ -4,25 +4,22 @@ public class Course {
 
     //Variables
     private String courseName;
-    private String courseID;
+    private int unitID;
 
     //Constructor
-    public Course(String courseName, String courseID) {
+    public Course(String courseName, int unitID) {
         this.courseName = courseName;
-        this.courseID = courseID;
+        this.unitID = unitID;
     }
-
-    //Getter
+    //Getter and Setters
     public String getCourseName() {
         return courseName;
     }
-    public String getCourseID() {
-        return courseID;
+    public int getUnitID() {
+        return unitID;
     }
 
-    //Setter
-    public void setCourseID(String courseID) {
-        this.courseID = courseID;
+    public void setUnitID(int unitID) {
+        this.unitID = unitID;
     }
-
 }

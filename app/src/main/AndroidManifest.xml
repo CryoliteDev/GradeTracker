@@ -20,6 +20,9 @@
         <activity android:name=".EnglishActivity"
             android:label="English Course Details"/>
 
+        <activity android:name=".SpanishActivity"
+            android:label="Spanish Course Details"/>
+
 
     </application>
 

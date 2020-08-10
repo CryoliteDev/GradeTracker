@@ -15,7 +15,7 @@
             android:id="@+id/course_name"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text=""
+            android:text="Course Name"
             android:textSize="26sp"
             android:textColor="@color/colorPrimary"
             android:fontFamily="sans-serif-medium"

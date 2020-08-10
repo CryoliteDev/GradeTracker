@@ -32,7 +32,6 @@ public class EnglishActivity extends AppCompatActivity {
         AssignmentAdapter adapter = new AssignmentAdapter(this,assignments);
 
         ListView assignmentListView = (ListView) findViewById(R.id.assignment_list);
-
         assignmentListView.setAdapter(adapter);
     }
 
